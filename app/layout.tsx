@@ -60,12 +60,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html lang="en" suppressHydrationWarning>
         <head>
-          <Script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5245068093651973"
-            crossOrigin="anonymous"
-            strategy="lazyOnload"
-          />
+          {/*<Script*/}
+          {/*  async*/}
+          {/*  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5245068093651973"*/}
+          {/*  crossOrigin="anonymous"*/}
+          {/*  strategy="lazyOnload"*/}
+          {/*/>*/}
         </head>
         <body
           className={cn(
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <TailwindIndicator />
           </ThemeProvider>
         </body>
-        <GoogleAnalytics gaId="G-20G8R0K6W9" />
+        {/*<GoogleAnalytics gaId="G-20G8R0K6W9" />*/}
       </html>
     </>
   )

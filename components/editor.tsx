@@ -67,7 +67,7 @@ export const Editor = () => {
 
         if (key.includes("fetch:"))
           setDialogText(
-            "Downloading AI models. This was a little while ago the first time..."
+            "Downloading AI models. Please wait ~30sec."
           )
         if (key === "compute:inference") setDialogText("Processing image...")
       },
@@ -198,7 +198,7 @@ export const Editor = () => {
           onClick={remove}
           disabled={!imageData}
         >
-          <Icons.SolarGalleryRemoveLineDuotone className="mr-2 size-5"></Icons.SolarGalleryRemoveLineDuotone>
+          <Icons.SolarEraserBoldDuotone className="mr-2 size-5"></Icons.SolarEraserBoldDuotone>
           Process
         </Button>
 

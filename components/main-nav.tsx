@@ -15,9 +15,11 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="size-5" />
-        <span className="inline-block font-museo font-extrabold tracking-wider">
-          removerized
+        <Icons.SolarEraserBoldDuotone className="size-5" />
+
+        <span className="inline-block
+         font-extrabold tracking-wider">
+          Make<span className={"text-orange-500"}>Image</span>Transparent<span style={{opacity: 0.4}}>.com</span>
         </span>
       </Link>
       {items?.length ? (
