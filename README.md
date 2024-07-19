@@ -8,8 +8,6 @@
 <a href="https://removerized.pages.dev/" target="_blank">removerized.pages.dev</a>
 </p>
 
-![blog](docs/banner.png)
-
 <div align="center">
 <img src="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff&style=for-the-badge" alt="Next.js Badge">
 <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge" alt="TypeScript Badge">
