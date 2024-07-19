@@ -49,7 +49,7 @@ export const Editor = () => {
   const handleDownload = () => {
     const link = document.createElement("a")
     link.href = resultData!
-    link.download = `removerized-${Date.now()}.png`
+    link.download = `transparent-${Date.now()}.png`
     link.click()
   }
 

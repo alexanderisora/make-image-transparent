@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "removerized: Free AI-Powered Background Remover Tool",
+  name: "Free Background Remover Tool",
 
   description:
-    "Effortlessly Remove Image Backgrounds with AI - Free & Limitless with Offline Support",
+    "Remove image backgrounds and make your image transparent! Click to use this 100% free online tool.",
   mainNav: [
     // {
     //   title: "Donation",
