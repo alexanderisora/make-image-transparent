@@ -67,7 +67,7 @@ export const Editor = () => {
 
         if (key.includes("fetch:"))
           setDialogText(
-            "Downloading AI models. Please wait ~30sec."
+            "Downloading AI models. Please wait ~30sec 🙌"
           )
         if (key === "compute:inference") setDialogText("Processing image...")
       },
@@ -123,11 +123,11 @@ export const Editor = () => {
           className="relative max-w-xs space-y-1 rounded-xl transition-all hover:bg-neutral-200 dark:hover:bg-neutral-900"
         >
           <FileInput>
-            <div className="flex w-full flex-col items-center justify-center pb-4 pt-3 ">
-              <Icons.SolarCloudUploadBoldDuotone className="size-8"></Icons.SolarCloudUploadBoldDuotone>
+            <div className={"flex w-full flex-col items-center justify-center pb-4 pt-3 " + (!imageData ? "animate-pulse scale-125" : ' ')}>
+              <Icons.SolarCloudUploadBoldDuotone className="size-8 text-orange-500"></Icons.SolarCloudUploadBoldDuotone>
               <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
                 <span className="font-semibold">Click to upload</span>
-                &nbsp; or drag and drop
+                &nbsp;or drag and drop
               </p>
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 PNG, JPG or WEBP file
@@ -191,7 +191,7 @@ export const Editor = () => {
       </div>
 
       {/* Tools */}
-      <div className="flex items-center justify-center gap-2">
+      {imageData && <div className="flex items-center justify-center gap-2">
         <Button
           variant={"ringHover"}
           className="rounded-full font-bold"
@@ -208,10 +208,11 @@ export const Editor = () => {
           className="font-bold"
           onClick={handleDownload}
         >
-          <Icons.SolarDownloadMinimalisticBoldDuotone className="mr-2 size-5"></Icons.SolarDownloadMinimalisticBoldDuotone>
+          <Icons.SolarDownloadMinimalisticBoldDuotone
+            className="mr-2 size-5"></Icons.SolarDownloadMinimalisticBoldDuotone>
           Download
         </Button>
-      </div>
+      </div>}
 
       <AlertDialog open={showDialog}>
         <AlertDialogContent>
