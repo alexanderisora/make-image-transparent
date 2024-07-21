@@ -36,7 +36,7 @@ export function SiteHeader() {
             <ThemeToggle />
           </nav>
 
-          <MenuWithButton items={siteConfig.mainNav}></MenuWithButton>
+          {/*<MenuWithButton items={siteConfig.mainNav}></MenuWithButton>*/}
         </div>
       </div>
     </header>
